@@ -1,0 +1,160 @@
+:root {
+    --primary:#0d6efd;
+    --dark:#21252f;
+    --body: #797979;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.01);
+}
+
+body{
+    background-color: var(--body);
+    font-family: sora,"sans-serif";
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4{
+    color: var(--dark);
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+}
+.navbar {
+    width: 160x;
+}
+
+.navbar .nav-link{
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+.hero{
+    background-image:url(../assets/img/bg3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+}
+.hero ::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#736f6f;
+    z-index: -1;
+
+}
+
+#about
+{
+    background-image:url(../assets/img/bg3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+
+}
+  
+
+.about{
+    padding-top: 3px;
+    padding-bottom: 30px;
+}
+
+.card {
+    grid-column: span 1;
+}
+
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px ;
+    border-radius: 100px;
+}
+
+.servis{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.servis::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+
+.servis:hover .iconbox{
+    background-color: #fff;
+    color: var(--primary);
+}
+.servis:hover h5,
+.servis:hover p{
+    color: #fff;
+}
+
+.servis:hover::after{
+    opacity: 1;
+    top:0;
+
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+  }
+  
+  .card {
+    transition: transform 0.3s ease; 
+  }
+  
+#portofolio
+{
+    background-image:url(../assets/img/bg3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+
+}
+#contact
+{
+    background-image:url(../assets/img/bg3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+
+}
